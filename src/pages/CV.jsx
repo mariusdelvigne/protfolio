@@ -32,9 +32,19 @@ export default function CV() {
         <Typography variant="h3" component="h1">Curriculum vitae</Typography>
         <Button variant="contained" startIcon={<DownloadIcon />} href={profile.cvFile} download>Télécharger le PDF</Button>
       </Stack>
+      
+      <Section title="Présentation">
+        <Typography>{profile.intro}</Typography>
+      </Section>
 
       <Section title="Expérience">{experience.map((e) => <Entry key={e.title} {...e} />)}</Section>
+
       <Section title="Formation">{education.map((e) => <Entry key={e.title} {...e} />)}</Section>
+    
+      <Section title="Langues">
+        {languages.map((l) => <Typography key={l.name}>{l.name} : <Typography component="span" color="text.secondary">{l.level}</Typography></Typography>)}
+      </Section>
+      
       <Section title="Compétences">
         {Object.entries(skills).map(([group, items]) => (
           <Stack key={group} sx={{ mb: 2 }}>
@@ -44,9 +54,6 @@ export default function CV() {
             </Stack>
           </Stack>
         ))}
-      </Section>
-      <Section title="Langues">
-        {languages.map((l) => <Typography key={l.name}>{l.name} : <Typography component="span" color="text.secondary">{l.level}</Typography></Typography>)}
       </Section>
     </>
   );

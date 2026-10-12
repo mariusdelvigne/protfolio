@@ -24,6 +24,7 @@ export const languages = [
 
 export const education = [
   { title: 'Bachelier en informatique de gestion – développement d’application', place: 'HELHA, Mons', period: '2022-2026' },
+  { title: "Obtention du CESS et d'un diplôme de Technicien en Informatiue", place: "Athénée Royale de Péruwelz", period:'2022' },
 ];
 
 export const experience = [
@@ -33,6 +34,12 @@ export const experience = [
     period: 'Février – juin 2026',
     text: 'Application de réservation d’espace de travail : backend C# .NET, frontend React JS et application mobile React Native.',
   },
+  {
+    title: 'Stage de technicen en Informatique',
+    place: 'NEO-IT, Saint-Ghislain',
+    period: '2 fois 5 semaine (mars 2021 & mars 2022)',
+    text: 'Implémentation de système informatique dans des entreprises, installation réseaux, support informatique.'
+  }
 ];
 
 export const projects = [
