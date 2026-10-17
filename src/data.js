@@ -7,7 +7,7 @@ export const profile = {
   email: 'marius.delvigne@gmail.com',
   github: 'https://github.com/mariusdelvigne',
   linkedin: 'https://www.linkedin.com/in/marius-delvigne-662438310/',
-  cvFile: '/public/CV_Delvigne_Marius.pdf',
+  cvFile: '/CV_Delvigne_Marius.pdf',
 };
 
 export const skills = {
